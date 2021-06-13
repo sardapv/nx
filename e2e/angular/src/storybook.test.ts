@@ -197,7 +197,7 @@ describe('Storybook schematics', () => {
       }
     }, 1000000);
 
-    xit('should build an Angular based storybook', () => {
+    it('should build an Angular based storybook', () => {
       const angularStorybookLib = uniq('test-ui-lib');
       createTestUILib(angularStorybookLib);
       runCLI(
@@ -212,7 +212,7 @@ describe('Storybook schematics', () => {
       ).toContain(`<title>Storybook</title>`);
     }, 1000000);
 
-    xit('should build an Angular based storybook that references another lib', () => {
+    it('should build an Angular based storybook that references another lib', () => {
       const angularStorybookLib = uniq('test-ui-lib');
       createTestUILib(angularStorybookLib);
       runCLI(
